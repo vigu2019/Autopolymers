@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <title>Contact Us – Auto Polymers</title>
+    <meta name="description"
+        content="Contact Auto Polymers for product and business enquiries. Development Plot No. 30, Athani Industrial Estate, Thrissur, Kerala, India." />
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <nav class="navbar" id="navbar">
+        <div class="container nav-inner">
+            <a href="index.html" class="nav-logo"><img src="Logo.png" alt="Auto Polymers" /></a>
+            <div class="nav-links" id="navLinks">
+                <a href="index.html">Home</a><a href="company.html">Company Profile</a>
+                <a href="products.html">Products</a><a href="services.html">Services</a>
+                <a href="contact.html" class="nav-cta active">Contact Us</a>
+            </div>
+            <div class="nav-toggle" id="navToggle"><span></span><span></span><span></span></div>
+        </div>
+    </nav>
+
+    <div class="page-hero">
+        <div class="container page-hero-content">
+            <p class="breadcrumb"><a href="index.html">Home</a> &rsaquo; Contact Us</p>
+            <h1>Connect With Us</h1>
+            <p>For product enquiries, custom solutions or any business discussion — we are ready to help.</p>
+        </div>
+    </div>
+
+    <section class="section bg-white">
+        <div class="container">
+            <div class="contact-grid">
+
+                <!-- LEFT: Contact details sidebar -->
+                <div class="contact-sidebar reveal">
+                    <h2>Get in Touch</h2>
+                    <p>Please connect with us for business (product / service) enquiries. Our team will respond
+                        promptly.</p>
+
+                    <div class="c-detail">
+                        <div class="c-label">Address</div>
+                        <address>
+                            Auto Polymers<br />
+                            Development Plot No. 30,<br />
+                            Athani Industrial Estate,<br />
+                            P.O. Peringandur,<br />
+                            Thrissur – 680 581<br />
+                            Kerala, India
+                        </address>
+                    </div>
+
+                    <div class="c-divider"></div>
+
+                    <div class="c-detail">
+                        <div class="c-label">Phone</div>
+                        <p>
+                            <a href="tel:+919497061615">+91 949 706 1615</a><br />
+                            <a href="tel:+914872201053">+91 487 220 1053</a>
+                        </p>
+                    </div>
+
+                    <div class="c-divider"></div>
+
+                    <div class="c-detail">
+                        <div class="c-label">Email</div>
+                        <p><a href="mailto:info@autopolymers.com">info@autopolymers.com</a></p>
+                    </div>
+
+                    <div class="c-divider"></div>
+
+                    <div class="c-detail">
+                        <div class="c-label">Website</div>
+                        <p><a href="http://www.autopolymers.com" target="_blank" rel="noopener">www.autopolymers.com</a>
+                        </p>
+                    </div>
+
+                    <div class="c-divider"></div>
+
+                    <!-- Map embed -->
+                    <div style="border-radius:8px;overflow:hidden;margin-top:4px;">
+                        <iframe title="Auto Polymers – Athani Industrial Estate, Thrissur"
+                            src="https://maps.google.com/maps?q=Athani+Industrial+Estate+Thrissur+Kerala+India&output=embed"
+                            width="100%" height="220" style="border:0;display:block;" loading="lazy">
+                        </iframe>
+                    </div>
+                </div>
+
+                <!-- RIGHT: Enquiry form -->
+                <div class="contact-form reveal reveal-d1">
+                    <h3>Send an Enquiry</h3>
+                    <p>Fill in the form below and our team will get back to you within one business day.</p>
+
+                    <form id="enquiryForm" onsubmit="handleSubmit(event)" novalidate>
+                        <div class="form-row">
+                            <div class="f-group">
+                                <label for="fname">Full Name *</label>
+                                <input type="text" id="fname" placeholder="Your Name" required />
+                            </div>
+                            <div class="f-group">
+                                <label for="fcompany">Company</label>
+                                <input type="text" id="fcompany" placeholder="Organisation" />
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="f-group">
+                                <label for="femail">Email Address *</label>
+                                <input type="email" id="femail" placeholder="you@company.com" required />
+                            </div>
+                            <div class="f-group">
+                                <label for="fphone">Phone Number</label>
+                                <input type="tel" id="fphone" placeholder="+91 XXXXX XXXXX" />
+                            </div>
+                        </div>
+                        <div class="f-group">
+                            <label for="ftype">Enquiry Type *</label>
+                            <select id="ftype" required>
+                                <option value="" disabled selected>Select enquiry type</option>
+                                <option>Product Enquiry</option>
+                                <option>Custom / Special Requirement</option>
+                                <option>Pricing / Quote Request</option>
+                                <option>Service Enquiry</option>
+                                <option>General Enquiry</option>
+                            </select>
+                        </div>
+                        <div class="f-group">
+                            <label for="fmsg">Your Message *</label>
+                            <textarea id="fmsg" placeholder="Please describe your requirement in detail…"
+                                required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-orange"
+                            style="width:100%;justify-content:center;border-radius:4px;padding:14px;">
+                            Send Enquiry
+                        </button>
+                        <p id="formOk"
+                            style="display:none;margin-top:16px;text-align:center;color:var(--g700);font-weight:bold;font-size:.88rem;">
+                            ✅ Thank you — our team will be in touch shortly.
+                        </p>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- INFO STRIP -->
+    <div
+        style="background:var(--g100);border-top:1px solid var(--ln);border-bottom:1px solid var(--ln);padding:36px 0;">
+        <div class="container">
+            <div class="stats-row" style="border:none;">
+                <div class="stat-cell" style="padding:20px 24px;">
+                    <strong style="font-size:1.4rem;">📞</strong>
+                    <span>+91 949 706 1615</span>
+                </div>
+                <div class="stat-cell" style="padding:20px 24px;">
+                    <strong style="font-size:1.4rem;">✉️</strong>
+                    <span>info@autopolymers.com</span>
+                </div>
+                <div class="stat-cell" style="padding:20px 24px;">
+                    <strong style="font-size:1.4rem;">📍</strong>
+                    <span>Thrissur, Kerala, India</span>
+                </div>
+                <div class="stat-cell" style="padding:20px 24px;">
+                    <strong style="font-size:1.4rem;">🌐</strong>
+                    <span>www.autopolymers.com</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container">
+            <div class="footer-top">
+                <div class="f-brand"><img src="Logo.png" alt="Auto Polymers" />
+                    <p>Precision moulded rubber products since 1993. Serving automotive, medical, industrial and
+                        commercial sectors from Thrissur, Kerala.</p>
+                </div>
+                <div class="f-col">
+                    <h4>Navigation</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="company.html">Company Profile</a></li>
+                        <li><a href="products.html">Products</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="f-col">
+                    <h4>Contact</h4>
+                    <p>Development Plot No. 30,<br />Athani Industrial Estate,<br />P.O. Peringandur,<br />Thrissur –
+                        680 581,<br />Kerala, India</p>
+                    <p style="margin-top:10px;text-align:left;"><a href="tel:+919497061615"
+                            style="color:rgba(255,255,255,.55);">+91 949 706 1615</a><br /><a
+                            href="mailto:info@autopolymers.com"
+                            style="color:rgba(255,255,255,.55);">info@autopolymers.com</a></p>
+                </div>
+            </div>
+            <div class="footer-bot">
+                <p>&copy; 2024 Auto Polymers. All rights reserved.</p>
+                <p><a href="http://www.autopolymers.com">www.autopolymers.com</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        const nav = document.getElementById('navbar');
+        window.addEventListener('scroll', () => nav.classList.toggle('scrolled', window.scrollY > 40));
+        document.getElementById('navToggle').addEventListener('click', () => document.getElementById('navLinks').classList.toggle('open'));
+        const obs = new IntersectionObserver(es => es.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); }), { threshold: 0.12 });
+        document.querySelectorAll('.reveal').forEach(el => obs.observe(el));
+        function handleSubmit(e) {
+            e.preventDefault();
+            document.getElementById('formOk').style.display = 'block';
+            e.target.reset();
+            setTimeout(() => { document.getElementById('formOk').style.display = 'none'; }, 6000);
+        }
+    </script>
+</body>
+
+</html>
