@@ -12,6 +12,15 @@
 
 <body>
 
+    <!-- FLOATING CTA -->
+    <a href="contact.html" class="floating-cta" id="floatingCta">
+        <span class="float-icon">💬</span>
+        <span>Get a Quote</span>
+    </a>
+    <button class="back-top" id="backTop" onclick="window.scrollTo({top:0,behavior:'smooth'})"
+        aria-label="Back to top">↑</button>
+
+
     <nav class="navbar" id="navbar">
         <div class="container nav-inner">
             <a href="index.html" class="nav-logo"><img src="Logo.png" alt="Auto Polymers" /></a>
@@ -28,6 +37,8 @@
 
     <!-- PAGE HERO -->
     <div class="page-hero">
+        <div class="page-hero-glow glow-1"></div>
+        <div class="page-hero-glow glow-2"></div>
         <div class="container page-hero-content">
             <p class="breadcrumb"><a href="index.html">Home</a> &rsaquo; Company Profile</p>
             <h1>Company Profile</h1>
@@ -39,7 +50,7 @@
     <section class="section bg-white">
         <div class="container">
             <div class="two-col">
-                <div class="reveal">
+                <div class="reveal-left">
                     <p class="tag">Our Origin</p>
                     <h2>Born from the Rubber Capital of India</h2>
                     <div class="sec-rule" style="margin-bottom:24px;"></div>
@@ -61,7 +72,7 @@
                             complete solutions as per customer requirements and applications.</p>
                     </div>
                 </div>
-                <div class="reveal reveal-d1">
+                <div class="reveal-right rev-d1">
                     <div class="two-col-img">
                         <img src="kerala.png" alt="Kerala rubber plantation – origin of Auto Polymers" />
                     </div>
@@ -228,10 +239,16 @@
     <script>
         const nav = document.getElementById('navbar');
         window.addEventListener('scroll', () => nav.classList.toggle('scrolled', window.scrollY > 40));
-        document.getElementById('navToggle').addEventListener('click', () =>
-            document.getElementById('navLinks').classList.toggle('open'));
-        const obs = new IntersectionObserver(es => es.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); }), { threshold: 0.12 });
-        document.querySelectorAll('.reveal').forEach(el => obs.observe(el));
+        document.getElementById('navToggle').addEventListener('click', () => document.getElementById('navLinks').classList.toggle('open'));
+        const floatingCta = document.getElementById('floatingCta');
+        const backTop = document.getElementById('backTop');
+        window.addEventListener('scroll', () => {
+            const show = window.scrollY > 400;
+            floatingCta.classList.toggle('visible', show);
+            backTop.classList.toggle('visible', show);
+        });
+        const obs = new IntersectionObserver(es => es.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); }), { threshold: 0.1 });
+        document.querySelectorAll('.reveal,.reveal-left,.reveal-right').forEach(el => obs.observe(el));
     </script>
 </body>
 

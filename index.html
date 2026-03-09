@@ -6,11 +6,19 @@
   <meta name="viewport" content="width=device-width,initial-scale=1.0" />
   <title>Auto Polymers – Precision Rubber Products | Thrissur, Kerala</title>
   <meta name="description"
-    content="Auto Polymers, founded 1993, manufactures precision moulded rubber products – O-rings, oil seals, gaskets, grommets and more for automotive, medical and industrial sectors." />
+    content="Auto Polymers manufactures premium moulded rubber products in Kerala, India since 1993 – O-rings, seals, gaskets for automotive, medical and industrial sectors." />
   <link rel="stylesheet" href="style.css" />
 </head>
 
 <body>
+
+  <!-- FLOATING CTA -->
+  <a href="contact.html" class="floating-cta" id="floatingCta">
+    <span class="float-icon">💬</span>
+    <span>Get a Quote</span>
+  </a>
+  <button class="back-top" id="backTop" onclick="window.scrollTo({top:0,behavior:'smooth'})"
+    aria-label="Back to top">↑</button>
 
   <!-- NAVBAR -->
   <nav class="navbar" id="navbar">
@@ -21,259 +29,388 @@
         <a href="company.html">Company Profile</a>
         <a href="products.html">Products</a>
         <a href="services.html">Services</a>
-        <a href="contact.html" class="nav-cta">Contact Us</a>
+        <a href="contact.html" class="nav-cta nav-skip">Contact Us</a>
       </div>
       <div class="nav-toggle" id="navToggle"><span></span><span></span><span></span></div>
     </div>
   </nav>
 
-  <!-- HERO -->
-  <section class="hero">
+  <!-- ═══════════════════════ HERO ═══════════════════════════ -->
+  <section class="hero" id="home">
+    <!-- Animated blobs -->
+    <div class="hero-blob hero-blob-1"></div>
+    <div class="hero-blob hero-blob-2"></div>
+    <div class="hero-blob hero-blob-3"></div>
+
     <div class="container">
-      <div class="hero-content reveal">
-        <p class="tag tag-white">Est. 1993 · Thrissur, Kerala, India</p>
-        <h1>Precision Rubber Solutions<br />Built on <em>Three Decades</em><br />of Excellence</h1>
-        <p class="hero-lead">From the natural rubber heartland of Kerala, Auto Polymers engineers and manufactures
-          high-quality moulded rubber components for automotive, medical, industrial and commercial applications.</p>
-        <div class="hero-actions">
-          <a href="products.html" class="btn btn-orange">View Products</a>
-          <a href="contact.html" class="btn btn-ghost">Request a Quote</a>
+      <div class="hero-layout">
+
+        <!-- Left content -->
+        <div class="hero-left">
+          <div class="hero-kicker">
+            <span class="dot"></span>
+            <span>Est. 1993 · Thrissur, Kerala, India</span>
+          </div>
+
+          <h1>Precision <span class="line-accent">Rubber Engineering</span></h1>
+
+          <div class="hero-typer">
+            <span class="static">We make</span>
+            <span class="typed" id="typedText"></span>
+          </div>
+
+          <p class="hero-desc">From the natural rubber heartland of Kerala — high-quality moulded components for
+            automotive, medical, industrial and commercial applications worldwide.</p>
+
+          <div class="hero-btns">
+            <a href="products.html" class="btn btn-orange">Explore Products</a>
+            <a href="contact.html" class="btn btn-ghost">Request a Quote →</a>
+          </div>
+
+          <div class="hero-divider"></div>
+
+          <div class="hero-trust">
+            <div class="ht-item">
+              <strong>30<sup style="font-size:.7em;color:var(--o300)">+</sup></strong>
+              <span>Years' Experience</span>
+            </div>
+            <div class="ht-item">
+              <strong>50<sup style="font-size:.7em;color:var(--o300)">+</sup></strong>
+              <span>Product Types</span>
+            </div>
+            <div class="ht-item">
+              <strong>8</strong>
+              <span>Rubber Compounds</span>
+            </div>
+            <div class="ht-item">
+              <strong>4</strong>
+              <span>Sectors Served</span>
+            </div>
+          </div>
         </div>
-        <div class="hero-stats">
-          <div class="hero-stat">
-            <strong>30+</strong>
-            <span>Years in Industry</span>
+
+        <!-- Right bento grid -->
+        <div class="hero-right">
+          <div class="hero-cell hero-cell-a">
+            <img src="kerala.png" alt="Kerala rubber plantation" />
+            <div class="hero-cell-overlay"></div>
+            <div class="hero-cell-label">Kerala Origin</div>
+            <span class="hero-stat-badge">Est. 1993</span>
           </div>
-          <div class="hero-stat">
-            <strong>50+</strong>
-            <span>Product Types</span>
+          <div class="hero-cell hero-cell-b">
+            <img src="factory.png" alt="Manufacturing facility" />
+            <div class="hero-cell-overlay"></div>
+            <div class="hero-cell-label">Manufacturing</div>
           </div>
-          <div class="hero-stat">
-            <strong>4</strong>
-            <span>Sectors Served</span>
+          <div class="hero-cell hero-cell-c">
+            <img src="hero_bg.png" alt="Precision components" />
+            <div class="hero-cell-overlay"></div>
+            <div class="hero-cell-label">Precision Parts</div>
           </div>
-          <div class="hero-stat">
-            <strong>100%</strong>
-            <span>Customer Focus</span>
+          <div class="hero-cell hero-cell-d">
+            <img src="kerala.png" alt="Industries served" style="object-position:center 70%" />
+            <div class="hero-cell-overlay"></div>
+            <div class="hero-cell-label">Automotive · Medical · Industrial · Commercial</div>
           </div>
         </div>
+
       </div>
     </div>
+
+    <!-- Angled bottom exit -->
+    <div class="hero-angle"></div>
   </section>
 
   <!-- MARQUEE -->
-  <div class="marquee-bar" aria-hidden="true">
+  <div class="marquee-bar">
     <div class="marquee-track">
-      <span class="item">O-Rings <span class="dot"></span></span>
-      <span class="item">Oil Seals <span class="dot"></span></span>
-      <span class="item">Gaskets <span class="dot"></span></span>
-      <span class="item">Grommets <span class="dot"></span></span>
-      <span class="item">Bush Kits <span class="dot"></span></span>
-      <span class="item">Diaphragms <span class="dot"></span></span>
-      <span class="item">Fabric Reinforced Pads <span class="dot"></span></span>
-      <span class="item">Custom Moulded Parts <span class="dot"></span></span>
-      <!-- duplicate for seamless loop -->
-      <span class="item">O-Rings <span class="dot"></span></span>
-      <span class="item">Oil Seals <span class="dot"></span></span>
-      <span class="item">Gaskets <span class="dot"></span></span>
-      <span class="item">Grommets <span class="dot"></span></span>
-      <span class="item">Bush Kits <span class="dot"></span></span>
-      <span class="item">Diaphragms <span class="dot"></span></span>
-      <span class="item">Fabric Reinforced Pads <span class="dot"></span></span>
-      <span class="item">Custom Moulded Parts <span class="dot"></span></span>
+      <span class="item">O-Rings<span class="dot-sep"></span></span>
+      <span class="item">Oil Seals<span class="dot-sep"></span></span>
+      <span class="item">Gaskets<span class="dot-sep"></span></span>
+      <span class="item">Grommets<span class="dot-sep"></span></span>
+      <span class="item">Bush Kits<span class="dot-sep"></span></span>
+      <span class="item">Diaphragms<span class="dot-sep"></span></span>
+      <span class="item">Fabric Reinforced Pads<span class="dot-sep"></span></span>
+      <span class="item">Custom Moulded Parts<span class="dot-sep"></span></span>
+      <span class="item">O-Rings<span class="dot-sep"></span></span>
+      <span class="item">Oil Seals<span class="dot-sep"></span></span>
+      <span class="item">Gaskets<span class="dot-sep"></span></span>
+      <span class="item">Grommets<span class="dot-sep"></span></span>
+      <span class="item">Bush Kits<span class="dot-sep"></span></span>
+      <span class="item">Diaphragms<span class="dot-sep"></span></span>
+      <span class="item">Fabric Reinforced Pads<span class="dot-sep"></span></span>
+      <span class="item">Custom Moulded Parts<span class="dot-sep"></span></span>
     </div>
   </div>
 
-  <!-- STATS ROW -->
-  <section class="bg-white">
+  <!-- ═══════════════════ ANIMATED STATS ══════════════════════ -->
+  <section class="stats-strip bg-white">
     <div class="container">
-      <div class="stats-row reveal">
-        <div class="stat-cell">
-          <strong id="c1">30+</strong>
-          <span>Years of Manufacturing Excellence</span>
+      <div class="stats-strip-inner">
+        <div class="stat-cell reveal">
+          <strong><span class="count" data-target="30">0</span><span class="stat-suffix">+</span></strong>
+          <span class="label">Years of Manufacturing Excellence</span>
         </div>
-        <div class="stat-cell">
-          <strong>50+</strong>
-          <span>Distinct Product Variants</span>
+        <div class="stat-cell reveal rev-d1">
+          <strong><span class="count" data-target="50">0</span><span class="stat-suffix">+</span></strong>
+          <span class="label">Distinct Product Variants</span>
         </div>
-        <div class="stat-cell">
-          <strong>4</strong>
-          <span>Industry Sectors Served</span>
+        <div class="stat-cell reveal rev-d2">
+          <strong><span class="count" data-target="8">0</span></strong>
+          <span class="label">Rubber Compound Types</span>
         </div>
-        <div class="stat-cell">
-          <strong>100%</strong>
-          <span>In-House Design &amp; R&amp;D</span>
+        <div class="stat-cell reveal rev-d3">
+          <strong><span class="count" data-target="100">0</span><span class="stat-suffix">%</span></strong>
+          <span class="label">In-House R&amp;D &amp; Testing</span>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- PRODUCTS -->
-  <section class="section">
+  <!-- ══════════════════ PRODUCTS – FILTERABLE ════════════════ -->
+  <section class="section bg-tint">
     <div class="container">
       <div class="sec-head center reveal">
-        <p class="tag">Product Range</p>
-        <h2>Engineered for Performance</h2>
-        <div class="sec-rule"></div>
-        <p>Precision moulded rubber components for demanding applications across multiple sectors and environments.</p>
+        <span class="tag">Product Range</span>
+        <h2>What We Manufacture</h2>
+        <div class="rule"></div>
+        <p>Precision-engineered rubber components for demanding applications. Filter by sector to find what fits your
+          need.</p>
       </div>
-      <div class="cards-grid">
-        <div class="card reveal reveal-d1">
-          <div class="card-icon">⭕</div>
-          <h3>O-Rings</h3>
-          <p>High-performance sealing rings in natural and synthetic compounds for static and dynamic applications.</p>
+
+      <!-- Filter tabs -->
+      <div class="filter-tabs" id="filterTabs">
+        <button class="filter-tab active" data-filter="all">All Products</button>
+        <button class="filter-tab" data-filter="auto">Automotive</button>
+        <button class="filter-tab" data-filter="industrial">Industrial</button>
+        <button class="filter-tab" data-filter="medical">Medical</button>
+        <button class="filter-tab" data-filter="commercial">Commercial</button>
+      </div>
+
+      <div class="product-grid" id="productGrid">
+        <div class="pr-card reveal" data-sectors="all auto industrial medical">
+          <div class="pr-card-top">
+            <span class="pr-badge">Sealing</span>
+            <span class="pr-card-emoji">⭕</span>
+            <h3>O-Rings</h3>
+          </div>
+          <div class="pr-card-body">
+            <p>High-performance sealing rings in all sizes and compounds for static and dynamic applications.</p>
+            <div class="pr-tags"><span class="pr-tag">Automotive</span><span class="pr-tag">Industrial</span><span
+                class="pr-tag">Medical</span></div>
+          </div>
         </div>
-        <div class="card reveal reveal-d2">
-          <div class="card-icon">🔩</div>
-          <h3>Oil Seals</h3>
-          <p>Engineered seals retaining lubricants and excluding contaminants in rotating shaft assemblies.</p>
+        <div class="pr-card reveal rev-d1" data-sectors="all auto industrial">
+          <div class="pr-card-top">
+            <span class="pr-badge">Sealing</span>
+            <span class="pr-card-emoji">🔩</span>
+            <h3>Oil Seals</h3>
+          </div>
+          <div class="pr-card-body">
+            <p>Engineered to retain lubricants and exclude contaminants in rotating shaft assemblies.</p>
+            <div class="pr-tags"><span class="pr-tag">Automotive</span><span class="pr-tag">Industrial</span></div>
+          </div>
         </div>
-        <div class="card reveal reveal-d3">
-          <div class="card-icon">🛡️</div>
-          <h3>Gaskets</h3>
-          <p>Custom moulded gaskets for leak-proof sealing across extreme temperature and pressure ranges.</p>
+        <div class="pr-card reveal rev-d2" data-sectors="all industrial commercial">
+          <div class="pr-card-top">
+            <span class="pr-badge">Sealing</span>
+            <span class="pr-card-emoji">🛡️</span>
+            <h3>Gaskets</h3>
+          </div>
+          <div class="pr-card-body">
+            <p>Custom moulded leak-proof gaskets for wide temperature and chemical exposure ranges.</p>
+            <div class="pr-tags"><span class="pr-tag">Industrial</span><span class="pr-tag">Commercial</span></div>
+          </div>
         </div>
-        <div class="card reveal reveal-d2">
-          <div class="card-icon">🔗</div>
-          <h3>Grommets</h3>
-          <p>Protective grommets for cable management, vibration isolation and panel edge protection.</p>
+        <div class="pr-card reveal rev-d1" data-sectors="all auto industrial commercial">
+          <div class="pr-card-top">
+            <span class="pr-badge">Protection</span>
+            <span class="pr-card-emoji">🔗</span>
+            <h3>Grommets</h3>
+          </div>
+          <div class="pr-card-body">
+            <p>Cable management, vibration isolation and panel edge protection in a wide range of profiles.</p>
+            <div class="pr-tags"><span class="pr-tag">Automotive</span><span class="pr-tag">Industrial</span></div>
+          </div>
         </div>
-        <div class="card reveal reveal-d3">
-          <div class="card-icon">🔧</div>
-          <h3>Bush Kits</h3>
-          <p>Suspension and steering bush kits offering superior noise reduction and extended service life.</p>
+        <div class="pr-card reveal rev-d2" data-sectors="all auto">
+          <div class="pr-card-top">
+            <span class="pr-badge">Suspension</span>
+            <span class="pr-card-emoji">🔧</span>
+            <h3>Bush Kits</h3>
+          </div>
+          <div class="pr-card-body">
+            <p>Superior noise reduction and vibration damping — a quality choice for automotive maintenance.</p>
+            <div class="pr-tags"><span class="pr-tag">Automotive</span><span class="pr-tag">OEM + Aftermarket</span>
+            </div>
+          </div>
         </div>
-        <div class="card reveal reveal-d4">
-          <div class="card-icon">🏭</div>
-          <h3>Diaphragms &amp; Pads</h3>
-          <p>Fabric-reinforced diaphragms and pads for pumps, valves and industrial machinery.</p>
+        <div class="pr-card reveal rev-d3" data-sectors="all industrial medical">
+          <div class="pr-card-top">
+            <span class="pr-badge">Pumps &amp; Valves</span>
+            <span class="pr-card-emoji">🏭</span>
+            <h3>Diaphragms</h3>
+          </div>
+          <div class="pr-card-body">
+            <p>Fabric-reinforced diaphragms for pumps, valves and control systems in critical service.</p>
+            <div class="pr-tags"><span class="pr-tag">Medical</span><span class="pr-tag">Industrial</span></div>
+          </div>
+        </div>
+        <div class="pr-card reveal rev-d2" data-sectors="all industrial commercial">
+          <div class="pr-card-top">
+            <span class="pr-badge">Structural</span>
+            <span class="pr-card-emoji">🔲</span>
+            <h3>Fabric Reinforced Pads</h3>
+          </div>
+          <div class="pr-card-body">
+            <p>High-strength pads for anti-vibration and bearing applications under demanding load conditions.</p>
+            <div class="pr-tags"><span class="pr-tag">Commercial</span><span class="pr-tag">Industrial</span></div>
+          </div>
+        </div>
+        <div class="pr-card reveal rev-d3" data-sectors="all auto industrial medical commercial">
+          <div class="pr-card-top">
+            <span class="pr-badge">Custom</span>
+            <span class="pr-card-emoji">⚙️</span>
+            <h3>Custom Moulded Parts</h3>
+          </div>
+          <div class="pr-card-body">
+            <p>Bespoke components developed and manufactured to your exact drawings, samples or specifications.</p>
+            <div class="pr-tags"><span class="pr-tag">All Sectors</span></div>
+          </div>
         </div>
       </div>
+
       <div style="text-align:center;margin-top:40px;" class="reveal">
         <a href="products.html" class="btn btn-ghost-dark">View Full Catalogue</a>
       </div>
     </div>
   </section>
 
-  <!-- SOLUTIONS -->
-  <section class="section bg-tint">
-    <div class="container">
-      <div class="sec-head center reveal">
-        <p class="tag">End-to-End Solutions</p>
-        <h2>Industries We Serve</h2>
-        <div class="sec-rule"></div>
-        <p>Delivering complete rubber component solutions across a broad range of critical industries.</p>
-      </div>
-      <div class="pills reveal">
-        <span class="pill">🚗 Automotive</span>
-        <span class="pill">🏥 Medical &amp; Pharmaceutical</span>
-        <span class="pill">⚙️ Industrial Machinery</span>
-        <span class="pill">🏢 Commercial</span>
-        <span class="pill">🌱 Agriculture</span>
-        <span class="pill">🚢 Marine</span>
-        <span class="pill">🔌 Electrical &amp; Electronics</span>
-      </div>
-    </div>
-  </section>
-
-  <!-- WHAT MAKES US UNIQUE -->
-  <section class="section bg-white">
-    <div class="container">
-      <div style="display:grid;grid-template-columns:1fr 1fr;gap:80px;align-items:start;">
-        <div class="reveal">
-          <p class="tag">Our Differentiators</p>
-          <h2>What Makes Us Unique?</h2>
-          <div class="sec-rule" style="margin-bottom:24px;"></div>
-          <p style="margin-bottom:20px;">We are not merely a supplier — we are a technical partner invested in
-            understanding your application and delivering results that exceed expectations.</p>
-          <a href="company.html" class="btn btn-ghost-dark" style="margin-top:8px;">Read Our Story</a>
-        </div>
-        <div class="features-list reveal reveal-d1">
-          <div class="feat-item">
-            <div class="feat-num">1</div>
-            <div>
-              <h3>Innovative &amp; Pragmatic Solutions</h3>
-              <p>Tailored solutions designed precisely around your application needs, combining creative thinking with
-                practical engineering.</p>
-            </div>
-          </div>
-          <div class="feat-item">
-            <div class="feat-num">2</div>
-            <div>
-              <h3>Consistent Quality</h3>
-              <p>Rigorous in-process controls backed by sophisticated analytical equipment ensuring uniform quality in
-                every batch.</p>
-            </div>
-          </div>
-          <div class="feat-item">
-            <div class="feat-num">3</div>
-            <div>
-              <h3>In-House R&amp;D Centre</h3>
-              <p>A dedicated design and research centre developing new formulations and product solutions continuously.
-              </p>
-            </div>
-          </div>
-          <div class="feat-item">
-            <div class="feat-num">4</div>
-            <div>
-              <h3>Competitive Pricing</h3>
-              <p>Direct manufacturing and efficient operations enable globally competitive pricing without any quality
-                compromise.</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ATTRIBUTES -->
+  <!-- ═══════════════════ SOLUTIONS SERVED ════════════════════ -->
   <section class="section bg-dark">
     <div class="container">
       <div class="sec-head center reveal">
-        <p class="tag tag-white">Product Commitments</p>
-        <h2>Built to Last. Designed to Perform.</h2>
-        <div class="sec-rule" style="margin:14px auto 0;"></div>
+        <span class="tag tag-light">End-to-End</span>
+        <h2 style="color:var(--wh)">Industries We Serve</h2>
+        <div class="rule" style="margin:16px auto 0;"></div>
+        <p style="color:rgba(255,255,255,.65);text-align:center;max-width:520px;margin:16px auto 0;">Delivering complete
+          rubber solutions across critical industries — from concept to delivery.</p>
       </div>
-      <div class="attr-grid">
-        <div class="attr-card reveal reveal-d1"><span class="attr-icon">🛡️</span>
-          <h3>Safe</h3>
-          <p>Compliant with safety standards across all end-use sectors.</p>
+      <div class="pills reveal">
+        <span class="pill"
+          style="border-color:rgba(255,255,255,.2);color:var(--wh);background:rgba(255,255,255,.06);">🚗
+          Automotive</span>
+        <span class="pill"
+          style="border-color:rgba(255,255,255,.2);color:var(--wh);background:rgba(255,255,255,.06);">🏥 Medical &amp;
+          Pharma</span>
+        <span class="pill"
+          style="border-color:rgba(255,255,255,.2);color:var(--wh);background:rgba(255,255,255,.06);">⚙️ Industrial
+          Machinery</span>
+        <span class="pill"
+          style="border-color:rgba(255,255,255,.2);color:var(--wh);background:rgba(255,255,255,.06);">🏢
+          Commercial</span>
+        <span class="pill"
+          style="border-color:rgba(255,255,255,.2);color:var(--wh);background:rgba(255,255,255,.06);">🌱
+          Agriculture</span>
+        <span class="pill"
+          style="border-color:rgba(255,255,255,.2);color:var(--wh);background:rgba(255,255,255,.06);">🚢 Marine</span>
+        <span class="pill"
+          style="border-color:rgba(255,255,255,.2);color:var(--wh);background:rgba(255,255,255,.06);">🔌
+          Electrical</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════ WHAT MAKES US UNIQUE ═════════════════ -->
+  <section class="section bg-white">
+    <div class="container">
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:80px;align-items:start;">
+        <div class="reveal-left">
+          <span class="tag">Our Differentiators</span>
+          <h2>What Makes Us Unique?</h2>
+          <div class="rule" style="margin-bottom:24px;"></div>
+          <p style="margin-bottom:20px;">We are not merely a supplier — we are a technical partner invested in
+            understanding your application and delivering results that consistently exceed expectations.</p>
+          <a href="company.html" class="btn btn-ghost-dark" style="margin-top:8px;">Read Our Story</a>
         </div>
-        <div class="attr-card reveal reveal-d2"><span class="attr-icon">💰</span>
-          <h3>Economical</h3>
-          <p>Maximum value, no compromise in performance or quality.</p>
-        </div>
-        <div class="attr-card reveal reveal-d3"><span class="attr-icon">💪</span>
-          <h3>Durable</h3>
-          <p>Long service life under harsh chemical and thermal conditions.</p>
-        </div>
-        <div class="attr-card reveal reveal-d1"><span class="attr-icon">⏰</span>
-          <h3>Time Tested</h3>
-          <p>Over three decades of proven performance across applications.</p>
-        </div>
-        <div class="attr-card reveal reveal-d2"><span class="attr-icon">✅</span>
-          <h3>Reliable</h3>
-          <p>Consistent batch-to-batch repeatability you can plan around.</p>
-        </div>
-        <div class="attr-card reveal reveal-d3"><span class="attr-icon">🌿</span>
-          <h3>Environment Friendly</h3>
-          <p>Eco-conscious processes and materials throughout production.</p>
+        <div class="unique-grid" style="grid-template-columns:1fr 1fr;">
+          <div class="unique-card reveal rev-d1">
+            <div class="unique-card-bg-num">1</div>
+            <span class="uc-icon">💡</span>
+            <h3>Innovative Solutions</h3>
+            <p>Creative engineering tailored to your precise application needs.</p>
+          </div>
+          <div class="unique-card reveal rev-d2">
+            <div class="unique-card-bg-num">2</div>
+            <span class="uc-icon">🎯</span>
+            <h3>Consistent Quality</h3>
+            <p>Rigorous in-process controls, backed by sophisticated analytics.</p>
+          </div>
+          <div class="unique-card reveal rev-d1">
+            <div class="unique-card-bg-num">3</div>
+            <span class="uc-icon">🔬</span>
+            <h3>In-House R&amp;D</h3>
+            <p>A dedicated centre continuously developing new formulations.</p>
+          </div>
+          <div class="unique-card reveal rev-d2">
+            <div class="unique-card-bg-num">4</div>
+            <span class="uc-icon">💰</span>
+            <h3>Competitive Pricing</h3>
+            <p>Direct manufacturing ensures globally competitive value.</p>
+          </div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- CTA BAND -->
+  <!-- ══════════════════ PRODUCT ATTRIBUTES ═══════════════════ -->
+  <section class="section bg-darkest">
+    <div class="container">
+      <div class="sec-head center reveal">
+        <span class="tag tag-light">Product Promise</span>
+        <h2 style="color:var(--wh)">Every Product Delivers…</h2>
+        <div class="rule" style="margin:16px auto 0;"></div>
+      </div>
+      <div class="attr-grid">
+        <div class="attr-card reveal rev-d1"><span class="attr-icon">🛡️</span>
+          <h3>Safe</h3>
+          <p>Compliant with safety standards for all end-use sectors and environments.</p>
+        </div>
+        <div class="attr-card reveal rev-d2"><span class="attr-icon">💰</span>
+          <h3>Economical</h3>
+          <p>Maximum value delivered — no performance or quality compromised.</p>
+        </div>
+        <div class="attr-card reveal rev-d3"><span class="attr-icon">💪</span>
+          <h3>Durable</h3>
+          <p>Long service life under harsh chemical and thermal conditions.</p>
+        </div>
+        <div class="attr-card reveal rev-d1"><span class="attr-icon">⏰</span>
+          <h3>Time Tested</h3>
+          <p>Three decades of proven performance across a breadth of applications.</p>
+        </div>
+        <div class="attr-card reveal rev-d2"><span class="attr-icon">✅</span>
+          <h3>Reliable</h3>
+          <p>Consistent, predictable batch-to-batch repeatability you plan around.</p>
+        </div>
+        <div class="attr-card reveal rev-d3"><span class="attr-icon">🌿</span>
+          <h3>Environment Friendly</h3>
+          <p>Eco-conscious processes and responsible materials throughout.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════ CTA BAND ════════════════════════ -->
   <div class="cta-band">
     <div class="container">
       <div class="cta-inner">
-        <div class="reveal">
+        <div class="reveal-left">
           <h2>Ready to Partner with Auto Polymers?</h2>
           <p>Connect with our team for product enquiries, custom requirements or a business discussion.</p>
         </div>
-        <div class="btn-group reveal reveal-d1">
+        <div class="btn-group reveal-right">
           <a href="contact.html" class="btn btn-orange">Get in Touch</a>
-          <a href="products.html" class="btn btn-ghost">View Products</a>
+          <a href="products.html" class="btn btn-ghost">View Products →</a>
         </div>
       </div>
     </div>
@@ -286,7 +423,7 @@
         <div class="f-brand">
           <img src="Logo.png" alt="Auto Polymers" />
           <p>Manufacturers of precision moulded natural and synthetic rubber products since 1993. Serving the
-            automotive, medical, industrial and commercial sectors from Thrissur, Kerala.</p>
+            automotive, medical, industrial and commercial sectors from Thrissur, Kerala, India.</p>
         </div>
         <div class="f-col">
           <h4>Navigation</h4>
@@ -302,9 +439,10 @@
           <h4>Contact</h4>
           <p>Development Plot No. 30,<br />Athani Industrial Estate,<br />P.O. Peringandur,<br />Thrissur – 680
             581,<br />Kerala, India</p>
-          <p style="margin-top:12px;text-align:left;">
-            <a href="tel:+919497061615" style="color:rgba(255,255,255,.55);">+91 949 706 1615</a><br />
-            <a href="mailto:info@autopolymers.com" style="color:rgba(255,255,255,.55);">info@autopolymers.com</a>
+          <p style="margin-top:12px;">
+            <a href="tel:+919497061615">+91 949 706 1615</a><br />
+            <a href="tel:+914872201053">+91 487 220 1053</a><br />
+            <a href="mailto:info@autopolymers.com">info@autopolymers.com</a>
           </p>
         </div>
       </div>
@@ -315,20 +453,100 @@
     </div>
   </footer>
 
+  <!-- ═══════════════════ SCRIPTS ══════════════════════════════ -->
   <script>
-    // Navbar scroll
+    // ── Navbar scroll
     const nav = document.getElementById('navbar');
     window.addEventListener('scroll', () => nav.classList.toggle('scrolled', window.scrollY > 40));
 
-    // Mobile nav
+    // ── Mobile nav
     document.getElementById('navToggle').addEventListener('click', () =>
       document.getElementById('navLinks').classList.toggle('open'));
 
-    // Scroll reveal
-    const observer = new IntersectionObserver(entries =>
+    // ── Floating CTA + back-to-top visibility
+    const floatingCta = document.getElementById('floatingCta');
+    const backTop = document.getElementById('backTop');
+    window.addEventListener('scroll', () => {
+      const show = window.scrollY > 400;
+      floatingCta.classList.toggle('visible', show);
+      backTop.classList.toggle('visible', show);
+    });
+
+    // ── Scroll reveal
+    const revealObs = new IntersectionObserver(entries =>
       entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); }),
-      { threshold: 0.12 });
-    document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+      { threshold: 0.1 });
+    document.querySelectorAll('.reveal, .reveal-left, .reveal-right').forEach(el => revealObs.observe(el));
+
+    // ── Animated number counter
+    function animateCount(el) {
+      const target = +el.dataset.target;
+      const dur = 1400;
+      const step = 16;
+      const inc = target / (dur / step);
+      let cur = 0;
+      const timer = setInterval(() => {
+        cur += inc;
+        if (cur >= target) { cur = target; clearInterval(timer); }
+        el.textContent = Math.floor(cur);
+      }, step);
+    }
+    const countObs = new IntersectionObserver(entries => {
+      entries.forEach(e => {
+        if (e.isIntersecting) {
+          animateCount(e.target);
+          countObs.unobserve(e.target);
+        }
+      });
+    }, { threshold: 0.5 });
+    document.querySelectorAll('.count').forEach(el => countObs.observe(el));
+
+    // ── Typewriter effect
+    const words = [
+      'O-Rings.',
+      'Oil Seals.',
+      'Gaskets.',
+      'Grommets.',
+      'Bush Kits.',
+      'Diaphragms.',
+      'Custom Parts.'
+    ];
+    let wi = 0, ci = 0, deleting = false;
+    const typedEl = document.getElementById('typedText');
+    function type() {
+      const word = words[wi];
+      if (!deleting) {
+        typedEl.textContent = word.slice(0, ++ci);
+        if (ci === word.length) {
+          deleting = true;
+          setTimeout(type, 1600);
+          return;
+        }
+      } else {
+        typedEl.textContent = word.slice(0, --ci);
+        if (ci === 0) {
+          deleting = false;
+          wi = (wi + 1) % words.length;
+        }
+      }
+      setTimeout(type, deleting ? 60 : 95);
+    }
+    type();
+
+    // ── Product filter tabs
+    const tabs = document.querySelectorAll('.filter-tab');
+    const cards = document.querySelectorAll('#productGrid .pr-card');
+    tabs.forEach(tab => {
+      tab.addEventListener('click', () => {
+        tabs.forEach(t => t.classList.remove('active'));
+        tab.classList.add('active');
+        const f = tab.dataset.filter;
+        cards.forEach(c => {
+          const s = c.dataset.sectors || '';
+          c.classList.toggle('hidden', f !== 'all' && !s.includes(f));
+        });
+      });
+    });
   </script>
 </body>
 

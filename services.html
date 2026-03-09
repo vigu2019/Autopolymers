@@ -11,6 +11,10 @@
 </head>
 
 <body>
+    <a href="contact.html" class="floating-cta" id="floatingCta"><span class="float-icon">💬</span><span>Get a
+            Quote</span></a>
+    <button class="back-top" id="backTop" onclick="window.scrollTo({top:0,behavior:'smooth'})"
+        aria-label="Back to top">↑</button>
     <nav class="navbar" id="navbar">
         <div class="container nav-inner">
             <a href="index.html" class="nav-logo"><img src="Logo.png" alt="Auto Polymers" /></a>
@@ -24,6 +28,8 @@
     </nav>
 
     <div class="page-hero">
+        <div class="page-hero-glow glow-1"></div>
+        <div class="page-hero-glow glow-2"></div>
         <div class="container page-hero-content">
             <p class="breadcrumb"><a href="index.html">Home</a> &rsaquo; Services</p>
             <h1>Our Services</h1>
@@ -228,8 +234,11 @@
         const nav = document.getElementById('navbar');
         window.addEventListener('scroll', () => nav.classList.toggle('scrolled', window.scrollY > 40));
         document.getElementById('navToggle').addEventListener('click', () => document.getElementById('navLinks').classList.toggle('open'));
-        const obs = new IntersectionObserver(es => es.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); }), { threshold: 0.12 });
-        document.querySelectorAll('.reveal').forEach(el => obs.observe(el));
+        const floatingCta = document.getElementById('floatingCta');
+        const backTop = document.getElementById('backTop');
+        window.addEventListener('scroll', () => { const show = window.scrollY > 400; floatingCta.classList.toggle('visible', show); backTop.classList.toggle('visible', show); });
+        const obs = new IntersectionObserver(es => es.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); }), { threshold: 0.1 });
+        document.querySelectorAll('.reveal,.reveal-left,.reveal-right').forEach(el => obs.observe(el));
     </script>
 </body>
 
