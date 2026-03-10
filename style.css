@@ -337,8 +337,17 @@ strong {
   height: 72px;
 }
 
+.nav-logo {
+  background: #ffffff;
+  border-radius: 6px;
+  padding: 5px 14px;
+  display: inline-flex;
+  align-items: center;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, .18);
+}
+
 .nav-logo img {
-  height: 46px;
+  height: 38px;
 }
 
 .nav-links {
