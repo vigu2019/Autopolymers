@@ -321,84 +321,144 @@ strong {
   position: fixed;
   inset: 0 0 auto;
   z-index: 900;
-  background: var(--wh);
-  border-bottom: 1px solid var(--ln);
-  transition: box-shadow var(--dur) var(--ease);
+  /* Subtle dark-glass: always anchored, never invisible */
+  background: rgba(8, 24, 18, 0.72);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.07);
+  transition: background .4s ease, border-color .4s ease, box-shadow .4s ease,
+    backdrop-filter .4s ease;
 }
 
+/* Clean white state once the user scrolls past the hero */
 .navbar.scrolled {
-  box-shadow: 0 4px 24px rgba(0, 0, 0, .10);
+  background: var(--wh);
+  border-bottom: 1px solid var(--ln);
+  box-shadow: 0 2px 24px rgba(0, 0, 0, .10);
+  backdrop-filter: none;
+  -webkit-backdrop-filter: none;
 }
 
 .nav-inner {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  height: 72px;
+  height: 80px;
 }
 
+/* Logo — no pill box; just let the dark glass carry it */
 .nav-logo {
   display: inline-flex;
   align-items: center;
+  transition: opacity .25s ease;
+}
+
+.nav-logo:hover {
+  opacity: .85;
 }
 
 .nav-logo img {
-  height: 42px;
+  height: 44px;
+  /* Make logo white against the dark glass/hero */
+  filter: brightness(0) invert(1);
+  transition: filter .4s ease;
+}
+
+/* On white scrolled state, the logo sits naturally in its dark color */
+.navbar.scrolled .nav-logo img {
+  height: 44px;
+  filter: none;
 }
 
 .nav-links {
   display: flex;
   align-items: center;
-  gap: 2px;
+  gap: 4px;
 }
 
+/* Links default: crisp white over the dark-glass navbar */
 .nav-links a {
   font-family: var(--sans);
-  font-size: .72rem;
+  font-size: .73rem;
   font-weight: 600;
-  letter-spacing: 1.2px;
+  letter-spacing: 1.4px;
   text-transform: uppercase;
-  color: var(--t600);
-  padding: 7px 16px;
+  color: rgba(255, 255, 255, .78);
+  padding: 8px 18px;
   border-radius: var(--r4);
-  transition: all var(--dur) var(--ease);
+  transition: color .3s ease;
   position: relative;
 }
 
+/* Sliding underline indicator */
 .nav-links a::after {
   content: '';
   position: absolute;
-  bottom: -1px;
+  bottom: -4px;
+  /* Give it more breathing room */
   left: 50%;
   right: 50%;
-  height: 2px;
-  background: var(--o500);
-  transition: all var(--dur) var(--ease);
+  height: 1.5px;
+  background: var(--o400);
+  transition: left .28s var(--ease), right .28s var(--ease);
   border-radius: 1px;
 }
 
 .nav-links a:hover,
 .nav-links a.active {
-  color: var(--g700);
+  color: var(--wh);
 }
 
 .nav-links a:hover::after,
 .nav-links a.active::after {
-  left: 16px;
-  right: 16px;
+  left: 18px;
+  right: 18px;
 }
 
+/* Links on white navbar */
+.navbar.scrolled .nav-links a {
+  color: var(--t600);
+}
+
+.navbar.scrolled .nav-links a:hover,
+.navbar.scrolled .nav-links a.active {
+  color: var(--g700);
+}
+
+.navbar.scrolled .nav-links a::after {
+  background: var(--o500);
+}
+
+/* Contact CTA — clean, well-spaced pill button */
 .nav-cta {
-  margin-left: 12px;
+  margin-left: 10px;
+  padding: 8px 18px !important;
+  background: transparent !important;
+  color: var(--wh) !important;
+  border: 1px solid rgba(255, 255, 255, 0.4) !important;
+  border-radius: var(--r4);
+  letter-spacing: 1.2px;
+  font-size: .68rem !important;
+  font-weight: 600 !important;
+  box-shadow: none !important;
+  transition: background .25s ease, border-color .25s ease, color .25s ease !important;
+}
+
+.navbar.scrolled .nav-cta {
   background: var(--o500) !important;
   color: var(--wh) !important;
-  border-radius: var(--r4);
-  letter-spacing: 1px;
+  border-color: var(--o500) !important;
 }
 
 .nav-cta:hover {
+  background: rgba(255, 255, 255, 0.1) !important;
+  border-color: var(--wh) !important;
+}
+
+.navbar.scrolled .nav-cta:hover {
   background: var(--o600) !important;
-  box-shadow: var(--sh-o);
+  border-color: var(--o600) !important;
+  box-shadow: 0 4px 14px rgba(224, 88, 0, .3) !important;
 }
 
 .nav-cta::after {
@@ -409,6 +469,7 @@ strong {
   display: none !important;
 }
 
+/* Mobile hamburger */
 .nav-toggle {
   display: none;
   flex-direction: column;
@@ -416,12 +477,17 @@ strong {
   cursor: pointer;
 }
 
+/* Toggle lines default: white (dark glass bg) */
 .nav-toggle span {
   width: 24px;
   height: 1.5px;
-  background: var(--t900);
+  background: rgba(255, 255, 255, .85);
   border-radius: 1px;
-  transition: var(--dur);
+  transition: background .35s ease;
+}
+
+.navbar.scrolled .nav-toggle span {
+  background: var(--t900);
 }
 
 /* ─── Floating / Back-to-top ─────────────────────────────── */
