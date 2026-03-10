@@ -3,7 +3,7 @@
    Strict professional: no emojis, clean icons, serif headings
    ============================================================ */
 
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;1,600&family=Inter:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,500;0,600;0,700;1,600&family=Source+Sans+3:wght@300;400;500;600;700&display=swap');
 
 /* ─── Reset ──────────────────────────────────────────────── */
 *,
@@ -53,8 +53,8 @@ ul {
   --t500: #4A5E54;
   --t300: #8A9E96;
 
-  --sans: 'Inter', system-ui, -apple-system, sans-serif;
-  --serif: 'Playfair Display', Georgia, 'Times New Roman', serif;
+  --sans: 'Source Sans 3', system-ui, -apple-system, sans-serif;
+  --serif: 'Raleway', system-ui, sans-serif;
   --mono: 'Courier New', monospace;
 
   --sh1: 0 1px 6px rgba(0, 0, 0, .06);
@@ -461,7 +461,7 @@ strong {
 }
 
 .floating-cta .arrow {
-  font-family: Georgia, serif;
+  font-family: var(--sans);
   font-size: .9rem;
 }
 
@@ -478,7 +478,7 @@ strong {
   border: none;
   cursor: pointer;
   font-size: .9rem;
-  font-family: Georgia, serif;
+  font-family: var(--sans);
   box-shadow: var(--sh2);
   transform: translateY(80px);
   opacity: 0;
@@ -504,6 +504,7 @@ strong {
   position: relative;
   overflow: hidden;
   padding-top: 72px;
+  padding-bottom: 100px;
 }
 
 .hero::before {
@@ -802,7 +803,7 @@ strong {
   height: 80px;
   background: var(--bg);
   clip-path: polygon(0 100%, 100% 0, 100% 100%);
-  z-index: 3;
+  z-index: 1;
 }
 
 /* ─── Ticker ─────────────────────────────────────────────── */
