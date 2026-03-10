@@ -325,11 +325,11 @@ strong {
   position: fixed;
   inset: 0 0 auto;
   z-index: 900;
-  /* Subtle dark-glass: always anchored, never invisible */
-  background: rgba(8, 24, 18, 0.72);
+  /* Subtle light-glass: always anchored */
+  background: rgba(255, 255, 255, 0.85);
   backdrop-filter: blur(14px);
   -webkit-backdrop-filter: blur(14px);
-  border-bottom: 1px solid rgba(255, 255, 255, 0.07);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.05);
   transition: background .4s ease, border-color .4s ease, box-shadow .4s ease,
     backdrop-filter .4s ease;
 }
@@ -477,11 +477,11 @@ strong {
   cursor: pointer;
 }
 
-/* Toggle lines default: white (dark glass bg) */
+/* Toggle lines default: dark */
 .nav-toggle span {
   width: 24px;
   height: 1.5px;
-  background: rgba(255, 255, 255, .85);
+  background: var(--t900);
   border-radius: 1px;
   transition: background .35s ease;
 }
@@ -1350,8 +1350,8 @@ strong {
 }
 
 .pill-dark {
-  border-color: rgba(255, 255, 255, .15);
-  color: rgba(255, 255, 255, .72);
+  border-color: var(--ln);
+  color: var(--t700);
   background: transparent;
 }
 
