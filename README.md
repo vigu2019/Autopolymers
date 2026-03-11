@@ -33,7 +33,7 @@ This repository contains the front-end code for the static website.
 
 **Auto Polymers**
 - **Address**: Development Plot No. 30, Athani Industrial Estate, P.O. Peringandur, Thrissur – 680 581, Kerala, India
-- **Phone**: +91 949 706 1615 / +91 487 220 1053
+- **Phone**: +91 907 432 0947 / +91 949 706 1615
 - **Email**: info@autopolymers.in
 - **Website**: [www.autopolymers.in](http://www.autopolymers.in)
 
