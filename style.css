@@ -362,12 +362,12 @@ strong {
 }
 
 .nav-logo img {
-  height: 44px;
+  height: 64px;
 }
 
-/* On white scrolled state, the logo sits naturally in its dark color */
 .navbar.scrolled .nav-logo img {
-  height: 44px;
+  height: 56px;
+  /* Slightly smaller when scrolled */
 }
 
 .nav-links {
