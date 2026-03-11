@@ -22,7 +22,7 @@
   <!-- NAVBAR -->
   <nav class="navbar" id="navbar">
     <div class="container nav-inner">
-      <a href="index.html" class="nav-logo"><img src="Logo.png" alt="Auto Polymers" /></a>
+      <a href="index.html" class="nav-logo"><img src="auto-logo.png" alt="Auto Polymers" /></a>
       <div class="nav-links" id="navLinks">
         <a href="index.html" class="active">Home</a>
         <a href="company.html">Company Profile</a>
@@ -190,6 +190,9 @@
             <span class="pr-cat">Sealing</span>
             <h3>O-Rings</h3>
           </div>
+          <div class="product-media" data-images="product-images/o-ring1.png,product-images/oring2.png">
+            <img src="product-images/o-ring1.png" alt="O-Rings product" loading="lazy" />
+          </div>
           <div class="pr-card-body">
             <p>High-performance sealing rings across all sizes and compounds for static and dynamic pressure
               applications.</p>
@@ -205,6 +208,9 @@
             <span class="pr-cat">Sealing</span>
             <h3>Oil Seals</h3>
           </div>
+          <div class="product-media">
+            <img src="product-images/oil-seal.png" alt="Oil Seals product" loading="lazy" />
+          </div>
           <div class="pr-card-body">
             <p>Engineered to retain lubricants and exclude contaminants in rotating shaft assemblies for long service
               life.</p>
@@ -216,6 +222,9 @@
             <span class="pr-cat">Sealing</span>
             <h3>Gaskets</h3>
           </div>
+          <div class="product-media">
+            <img src="product-images/Gaskets.jpg" alt="Gaskets product" loading="lazy" />
+          </div>
           <div class="pr-card-body">
             <p>Custom moulded leak-proof gaskets resistant to wide temperature ranges and chemical exposure.</p>
             <div class="pr-tags"><span class="pr-tag">Industrial</span><span class="pr-tag">Commercial</span></div>
@@ -226,6 +235,9 @@
             <span class="pr-cat">Protection</span>
             <h3>Grommets</h3>
           </div>
+          <div class="product-media">
+            <img src="product-images/grommet.jpg" alt="Grommets product" loading="lazy" />
+          </div>
           <div class="pr-card-body">
             <p>Cable management, vibration isolation and panel edge protection in a wide range of aperture sizes.</p>
             <div class="pr-tags"><span class="pr-tag">Automotive</span><span class="pr-tag">Industrial</span></div>
@@ -235,6 +247,10 @@
           <div class="pr-card-top">
             <span class="pr-cat">Suspension</span>
             <h3>Bush Kits</h3>
+          </div>
+          <div class="product-media"
+            data-images="product-images/bush-kit.png,product-images/bush-kit2.png,product-images/bush-kit3.png">
+            <img src="product-images/bush-kit.png" alt="Bush Kits product" loading="lazy" />
           </div>
           <div class="pr-card-body">
             <p>Suspension and steering bush kits for superior noise reduction and extended service life in automotive
@@ -247,6 +263,9 @@
             <span class="pr-cat">Pumps &amp; Valves</span>
             <h3>Diaphragms</h3>
           </div>
+          <div class="product-media">
+            <img src="product-images/diaphragm.jpg" alt="Diaphragms product" loading="lazy" />
+          </div>
           <div class="pr-card-body">
             <p>Fabric-reinforced diaphragms for pumps, valves and control systems in critical and medical service.</p>
             <div class="pr-tags"><span class="pr-tag">Medical</span><span class="pr-tag">Industrial</span></div>
@@ -256,6 +275,9 @@
           <div class="pr-card-top">
             <span class="pr-cat">Structural</span>
             <h3>Fabric Reinforced Pads</h3>
+          </div>
+          <div class="product-media">
+            <img src="product-images/reinforced-Pad.jpg" alt="Fabric Reinforced Pads product" loading="lazy" />
           </div>
           <div class="pr-card-body">
             <p>High-strength pads for anti-vibration and structural bearing applications under demanding load
@@ -267,6 +289,9 @@
           <div class="pr-card-top">
             <span class="pr-cat">Custom</span>
             <h3>Custom Moulded Parts</h3>
+          </div>
+          <div class="product-media">
+            <img src="hero_bg.png" alt="Custom moulded parts" loading="lazy" />
           </div>
           <div class="pr-card-body">
             <p>Bespoke components engineered and manufactured to your exact drawings, samples or specifications.</p>
@@ -300,6 +325,32 @@
         <span class="pill pill-dark">Agriculture</span>
         <span class="pill pill-dark">Marine</span>
         <span class="pill pill-dark">Electrical &amp; Electronics</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- TRUSTED CUSTOMERS -->
+  <section class="section bg-white">
+    <div class="container">
+      <div class="sec-head center reveal">
+        <span class="eyebrow">Trusted Customers</span>
+        <h2>Companies That Trust Us</h2>
+        <div class="rule"></div>
+        <p>We are proud to support leading companies with reliable rubber components and consistent quality.</p>
+      </div>
+      <div class="client-logos">
+        <div class="client-logo-card reveal">
+          <img src="company-logos/Apollo_Tyres_Ltd.png" alt="Apollo Tyres logo" loading="lazy" />
+        </div>
+        <div class="client-logo-card reveal rev-d1">
+          <img src="company-logos/hycount.png" alt="Hycount logo" loading="lazy" class="logo-large" />
+        </div>
+        <div class="client-logo-card reveal rev-d2">
+          <img src="company-logos/ocean.png" alt="Ocean logo" loading="lazy" class="logo-large logo-ocean" />
+        </div>
+        <div class="client-logo-card reveal rev-d3">
+          <img src="company-logos/aizar.jpg" alt="Aizar logo" loading="lazy" class="logo-large" />
+        </div>
       </div>
     </div>
   </section>
@@ -498,6 +549,25 @@
       setTimeout(type, del ? 55 : 90);
     }
     type();
+
+    function initProductSlideshows() {
+      const mediaEls = document.querySelectorAll('.product-media[data-images]');
+      mediaEls.forEach((media, mediaIdx) => {
+        const img = media.querySelector('img');
+        const images = (media.dataset.images || '').split(',').map(s => s.trim()).filter(Boolean);
+        if (!img || images.length < 2) return;
+        let idx = 0;
+        setInterval(() => {
+          idx = (idx + 1) % images.length;
+          img.style.opacity = '0';
+          setTimeout(() => {
+            img.src = images[idx];
+            img.style.opacity = '1';
+          }, 180);
+        }, 2800 + (mediaIdx % 3) * 300);
+      });
+    }
+    initProductSlideshows();
 
     // Product filter
     const tabs = document.querySelectorAll('.filter-tab');
