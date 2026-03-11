@@ -17,7 +17,7 @@
 
     <nav class="navbar" id="navbar">
         <div class="container nav-inner">
-            <a href="index.html" class="nav-logo"><img src="auto-logo.png" alt="Auto Polymers" /></a>
+            <a href="index.html" class="nav-logo"><img src="Logo.png" alt="Auto Polymers" /></a>
             <div class="nav-links" id="navLinks">
                 <a href="index.html">Home</a>
                 <a href="company.html">Company Profile</a>
@@ -55,9 +55,6 @@
                         <div class="pdcard-code">OR</div>
                         <h3>O-Rings</h3>
                     </div>
-                    <div class="product-media" data-images="product-images/o-ring1.png,product-images/oring2.png">
-                        <img src="product-images/o-ring1.png" alt="O-Rings product" loading="lazy" />
-                    </div>
                     <div class="pdcard-body">
                         <p>High-performance sealing rings in a comprehensive range of sizes and compounds for static and
                             dynamic applications at wide temperature and pressure ranges.</p>
@@ -73,9 +70,6 @@
                         <div class="pdcard-code">OS</div>
                         <h3>Oil Seals</h3>
                     </div>
-                    <div class="product-media">
-                        <img src="product-images/oil-seal.png" alt="Oil Seals product" loading="lazy" />
-                    </div>
                     <div class="pdcard-body">
                         <p>Engineered seals designed to retain lubricants and exclude contaminants in rotating shaft
                             assemblies, ensuring equipment longevity under demanding service conditions.</p>
@@ -89,9 +83,6 @@
                     <div class="pdcard-head">
                         <div class="pdcard-code">GK</div>
                         <h3>Gaskets</h3>
-                    </div>
-                    <div class="product-media">
-                        <img src="product-images/Gaskets.jpg" alt="Gaskets product" loading="lazy" />
                     </div>
                     <div class="pdcard-body">
                         <p>Custom moulded gaskets to precise specifications, providing leak-proof sealing across extreme
@@ -108,9 +99,6 @@
                         <div class="pdcard-code">GM</div>
                         <h3>Grommets</h3>
                     </div>
-                    <div class="product-media">
-                        <img src="product-images/grommet.jpg" alt="Grommets product" loading="lazy" />
-                    </div>
                     <div class="pdcard-body">
                         <p>Protective grommets for cable management, vibration isolation and panel edge protection,
                             available in a wide range of aperture sizes and profiles.</p>
@@ -125,10 +113,6 @@
                     <div class="pdcard-head">
                         <div class="pdcard-code">BK</div>
                         <h3>Bush Kits</h3>
-                    </div>
-                    <div class="product-media"
-                        data-images="product-images/bush-kit.png,product-images/bush-kit2.png,product-images/bush-kit3.png">
-                        <img src="product-images/bush-kit.png" alt="Bush Kits product" loading="lazy" />
                     </div>
                     <div class="pdcard-body">
                         <p>Suspension and steering bush kits offering superior noise reduction, vibration damping and
@@ -145,9 +129,6 @@
                         <div class="pdcard-code">DI</div>
                         <h3>Diaphragms</h3>
                     </div>
-                    <div class="product-media">
-                        <img src="product-images/diaphragm.jpg" alt="Diaphragms product" loading="lazy" />
-                    </div>
                     <div class="pdcard-body">
                         <p>Fabric-reinforced diaphragms for pumps, valves and control systems — compounded for media
                             compatibility and cycling endurance in critical service.</p>
@@ -161,10 +142,6 @@
                     <div class="pdcard-head">
                         <div class="pdcard-code">FP</div>
                         <h3>Fabric Reinforced Pads</h3>
-                    </div>
-                    <div class="product-media">
-                        <img src="product-images/reinforced-Pad.jpg" alt="Fabric reinforced pads product"
-                            loading="lazy" />
                     </div>
                     <div class="pdcard-body">
                         <p>High-strength fabric-reinforced rubber pads for structural, anti-vibration and bearing
@@ -180,9 +157,6 @@
                     <div class="pdcard-head">
                         <div class="pdcard-code">CM</div>
                         <h3>Custom Moulded Parts</h3>
-                    </div>
-                    <div class="product-media">
-                        <img src="hero_bg.png" alt="Custom moulded parts" loading="lazy" />
                     </div>
                     <div class="pdcard-body">
                         <p>Our in-house R&amp;D and design team develops and manufactures bespoke moulded rubber
@@ -225,7 +199,7 @@
         <div class="container">
             <div class="sec-head center reveal">
                 <span class="eyebrow eyebrow-light">Product Promise</span>
-                <h2 style="color:#000">Every Product Delivers</h2>
+                <h2 style="color:var(--wh)">Every Product Delivers</h2>
                 <div class="rule" style="margin:18px auto 0;"></div>
             </div>
             <div class="attr-grid">
@@ -284,7 +258,7 @@
         <div class="container">
             <div class="footer-top">
                 <div class="f-brand">
-                    <img src="auto-logo.png" alt="Auto Polymers" />
+                    <img src="Logo.png" alt="Auto Polymers" />
                     <p>Precision moulded rubber products since 1993 &mdash; Thrissur, Kerala, India.</p>
                 </div>
                 <div class="f-col">
@@ -301,7 +275,7 @@
                     <h4>Contact</h4>
                     <p>Athani Industrial Estate,<br />Thrissur &ndash; 680 581,<br />Kerala, India</p>
                     <p style="margin-top:14px;">
-                        <a href="tel:+919074320947">+91 907 432 0947</a><br />
+                        <a href="tel:+919074320947">+91 9074 320947</a><br />
                         <a href="tel:+919497061615">+91 949 706 1615</a><br />
                         <a href="mailto:info@autopolymers.in">info@autopolymers.in</a>
                     </p>
@@ -321,25 +295,6 @@
         window.addEventListener('scroll', () => { const s = window.scrollY > 420; floatingCta.classList.toggle('visible', s); backTop.classList.toggle('visible', s); });
         const obs = new IntersectionObserver(es => es.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); }), { threshold: 0.1 });
         document.querySelectorAll('.reveal,.reveal-left,.reveal-right').forEach(el => obs.observe(el));
-
-        function initProductSlideshows() {
-            const mediaEls = document.querySelectorAll('.product-media[data-images]');
-            mediaEls.forEach((media, mediaIdx) => {
-                const img = media.querySelector('img');
-                const images = (media.dataset.images || '').split(',').map(s => s.trim()).filter(Boolean);
-                if (!img || images.length < 2) return;
-                let idx = 0;
-                setInterval(() => {
-                    idx = (idx + 1) % images.length;
-                    img.style.opacity = '0';
-                    setTimeout(() => {
-                        img.src = images[idx];
-                        img.style.opacity = '1';
-                    }, 180);
-                }, 2800 + (mediaIdx % 3) * 300);
-            });
-        }
-        initProductSlideshows();
     </script>
 </body>
 
