@@ -20,7 +20,7 @@ This repository contains the front-end code for the static website.
 - `services.html`: Elaborates on the manufacturing and consulting services offered.
 - `contact.html`: Contact form and location details.
 - `style.css`: The global stylesheet containing the custom design system, modern aesthetics, animations, and responsive layouts.
-- Images & Assets: Various PNGs used across the site (e.g., `Logo.png`, `kerala.png`, `factory.png`, `hero_bg.png`).
+- Images & Assets: Various PNGs used across the site (e.g., `auto-logo.png`, `kerala.png`, `factory.png`, `hero_bg.png`).
 
 ## Features
 
